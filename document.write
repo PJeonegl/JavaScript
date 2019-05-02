@@ -1,0 +1,28 @@
+ 今天开始在W3chool学JavaScript时，这么一句话，
+
+提示：您只能在 HTML 输出中使用 document.write。如果您在文档加载后使用该方法，会覆盖整个文档。
+W3cshool给的代码如下：
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>
+JavaScript 能够直接写入 HTML 输出流中：
+</p>
+<script>
+document.write("<h1>This is a heading</h1>");
+document.write("<p>This is a paragraph.</p>");
+</script>
+<p>
+您只能在 HTML 输出流中使用 <strong>document.write</strong>。
+如果您在文档已加载后使用它（比如在函数中），会覆盖整个文档。
+</p>
+</body>
+</html>
+
+HTML输出流是什么？ HTML 输出流指的是当前数据形式是HTML格式的数据，这部分数据正被导出、传输或显示，所以称为“流”。
+
+document.write是文件创建过程中创建内容
+文档在创建过程中，如果遇到document.write就把内容加入到document中。
+当文档已经创建完成，document已关闭，此时在遇到document.write就会重写document。
+如果文档已完成加载后再执行document.write就会把整个html覆盖。
