@@ -1,4 +1,4 @@
- 今天开始在W3chool学JavaScript时，这么一句话，
+ 今天开始在W3chool学JavaScript时，有这么一句话：
 
 提示：您只能在 HTML 输出中使用 document.write。如果您在文档加载后使用该方法，会覆盖整个文档。
 W3cshool给的代码如下：
